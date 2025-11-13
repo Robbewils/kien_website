@@ -113,8 +113,8 @@ div.table:hover {
   text-align: center;
   font-size: 5rem;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  height: 10rem;
 } 
-
   </style>
 </head>
 <body>
@@ -535,6 +535,7 @@ div.table:hover {
     }
 
     function playAnimation() {
+      document.getElementById("winscreenDiv").textContent = '';
       const tableDivs = getTableDivs();
       if (tableDivs.length === 0) {
         console.warn('No visible tables found.');
@@ -545,7 +546,6 @@ div.table:hover {
       let count = 0;
 
       const interval = setInterval(() => {
-        document.getElementById("allTables").classList.remove("hidden");
         resetColor();
         randomDivColor();
         count++;
@@ -599,7 +599,6 @@ div.table:hover {
   const lastWinnerId = winners[winners.length - 1];
   const lastWinnerDiv = document.getElementById(lastWinnerId);
   const number = lastWinnerDiv ? lastWinnerDiv.textContent : '?';
-  winscreenDiv.classList.remove("hidden");
   winscreenDiv.textContent = `Gefeliciteerd tafel ${number}!`;
 }
   </script>
