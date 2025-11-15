@@ -7,8 +7,8 @@
   <style>
     /* Algemeen */
     body {
-  background-color: black;
   background-image: url(confetti.png);
+  background-color: rgb(12, 12, 12);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -49,7 +49,7 @@ button {
   margin: 20px auto;
   padding: 10px 20px;
   background-color: #ffd700;
-  color: #1a1a1a;
+  color: black;
   border: 2px solid #daa520;
   border-radius: 5px;
   cursor: pointer;
@@ -83,25 +83,41 @@ div.space {
 }
 
 /* Tabellen (blokken) */
-div.table {
+div.trippleTables {
   border: 2px solid #ffd700;
-  background-color: #1a1a1a;
+  background-color: black;
   color: #ffd700;
   padding: 5px;
   margin: 2px;
-  width: 100px;
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 2em;
+  transition: all 0.2s ease;
+}
+
+div.quadrippleTables {
+  border: 2px solid #ffd700;
+  background-color: black;
+  color: #ffd700;
+  padding: 5px;
+  margin: 2px;
+  width: 66px;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 2em;
   transition: all 0.2s ease;
 }
 
 div.table:hover {
   background-color: #daa520;
-  color: #1a1a1a;
+  color: black;
   transform: scale(1.1);
 }
 
@@ -120,6 +136,18 @@ div.table:hover {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   height: 10rem;
 } 
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  padding: 5px;
+  text-align: center;
+  color: #ffd700;
+  font-size: 1.2rem;
+}
   </style>
 </head>
 <body>
@@ -134,330 +162,332 @@ div.table:hover {
       <div class="allTables" id="allTables">
         <div class="row">
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
       
           <div class="hidden">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
       
           <div class="hidden">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
       
           <div class="hidden">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
         </div>
       
         <div class="row">
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="quadrippleTables" id="table"></div>
+            <div class="quadrippleTables" id="table"></div>
+            <div class="quadrippleTables" id="table"></div>
+            <div class="quadrippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
           
           <div class="hidden">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
           
           <div class="space"></div>
       
           <div class="hidden">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
       
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="quadrippleTables" id="table"></div>
+            <div class="quadrippleTables" id="table"></div>
+            <div class="quadrippleTables" id="table"></div>
+            <div class="quadrippleTables" id="table"></div>
           </div>
       
         </div>
         
         <div class="row">
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
       
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
       
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
       
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
         </div>
       
         <div class="row">
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
       
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
           
           <div class="space"></div>
       
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
       
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
         </div>
       
         <div class="row">
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
           
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
           
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
       
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
         </div>
       
         <div class="row">
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
           
           <div class="space"></div>
           
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
       
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
           
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
         </div>
       
         <div class="row">
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
       
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
           
           <div class="space"></div>
       
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
       
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
         </div>
       
         <div class="row">
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
       
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
-          </div>
-          
-          <div class="space"></div>
-      
-          <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
           
           <div class="space"></div>
       
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+          </div>
+          
+          <div class="space"></div>
+      
+          <div class="visible">
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
           
         </div>
       
         <div class="row">
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
           
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
       
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
           
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
         </div>
       
         <div class="row">
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
       
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
           <div class="space"></div>
       
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
           
           <div class="space"></div>
           
           <div class="visible">
-            <div class="table"></div>
-            <div class="table"></div>
-            <div class="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
+            <div class="trippleTables" id="table"></div>
           </div>
       
         </div>
@@ -466,7 +496,11 @@ div.table:hover {
     </div>
   </main>
 
+  <div style="height: 100px;"></div>
 
+  <footer>
+    <p>&copy; Robbe Wils 2025</p>
+  </footer>
 
   <script>
    console.log('Kien');
@@ -476,7 +510,7 @@ div.table:hover {
     localStorage.setItem('winners', JSON.stringify(winners));
 
     function getTableDivs() {
-      return Array.from(document.querySelectorAll('.table')).filter(div => div.closest('.visible'));
+      return Array.from(document.querySelectorAll('.trippleTables, .quadrippleTables')).filter(div => div.closest('.visible'));
     }
 
     function numberVisibleTables() {
@@ -492,7 +526,7 @@ div.table:hover {
     function highlightPreviousWinners() {
       const tableDivs = getTableDivs();
       tableDivs.forEach(div => {
-        div.style.backgroundColor = '#1a1a1a';
+        div.style.backgroundColor = 'black';
         div.style.color = '#2b2b3';
       });
       winners.forEach(id => {
@@ -508,7 +542,7 @@ div.table:hover {
       const tableDivs = getTableDivs();
       tableDivs.forEach(div => {
         if (!winners.includes(div.id)) {
-          div.style.backgroundColor = '#1a1a1a';
+          div.style.backgroundColor = 'black';
           div.style.color = '#ffd700';
         }
       });
