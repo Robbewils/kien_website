@@ -8,10 +8,15 @@
     /* Algemeen */
     body {
   background-color: black;
-  color: #ffd700; /* goudkleurige tekst */
+  background-image: url(confetti.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffd700;
   font-family: Arial, sans-serif;
   margin: 20px;
 }
+
 
 main {
   justify-content: center;
@@ -84,8 +89,8 @@ div.table {
   color: #ffd700;
   padding: 5px;
   margin: 2px;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,7 +125,7 @@ div.table:hover {
 <body>
   <button onclick="clearWinners()">Reset</button>
   <main>
-    <p style="font-size: 5rem; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">Wij trakteren</p>
+    <p style="font-size: 7rem; text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">Wij trakteren</p>
     <div class="winscreen" id="winscreenDiv"></div>
     
     <button onclick="playAnimation()" style="font-size: 3rem; border-radius: 20px;">Play</button>
@@ -457,8 +462,7 @@ div.table:hover {
       
         </div>
       </div>
-      <img src="balls.png" alt="name" style="height: 25rem;">
-      <img src="gold.png" alt="name" style="height: 25rem;">
+      <img src="wijtrakteren.png" alt="name" style="height: 70rem;">
     </div>
   </main>
 
